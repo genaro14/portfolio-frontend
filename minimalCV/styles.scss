@@ -153,29 +153,10 @@ h3 {
 }
 
 .social {
-    padding-left: 60px;
+    margin-top: 0;
+    padding-left: 15px;
     margin-bottom: 20px;
     cursor: pointer;
-}
-
-.social:before {
-    content: "";
-    @include setup($x, absolute, $x, -4px, $x, $x, 10px);
-    height: 35px;
-    width: 35px;
-    background-size: cover !important;
-}
-
-.social.twitter:before {
-    background: url('https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png') center no-repeat;
-}
-
-.social.pinterest:before {
-    background: url('https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Pinterest-23-128.png') center no-repeat;
-}
-
-.social.linked-in:before {
-    background: url('https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png') center no-repeat;
 }
 
 .side-header {
@@ -226,7 +207,15 @@ h3 {
     text-align: center;
     @include font('Open Sans', 18px, 6px, 600, 28px);
 }
-
+.font-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fab {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 @media screen and (max-width: 1150px) {
     .name {
         color: white;
